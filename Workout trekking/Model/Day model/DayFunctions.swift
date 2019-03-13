@@ -13,9 +13,23 @@ class DayFunctions {
         
     }
     
-    static func readDays() {
+    static func readDays(completion: @escaping () -> () ) {
+        // Code will replace in future with connecting remote datastory, and put into a background thread
+        // .userInteractive - the highest priority on a background thread
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.dayModels.count == 0 {
+                Data.dayModels.append(DayModel(title: .Monday))
+                Data.dayModels.append(DayModel(title: .Tuesday))
+                Data.dayModels.append(DayModel(title: .Wednesday))
+            }
+            DispatchQueue.main.async {
+                // Updating UI-stuff
+                completion()
+            }
+        }
         
     }
+    
     // Change parameters of day "Edit"
     static func updateDay(dayModel: DayModel) {
         
