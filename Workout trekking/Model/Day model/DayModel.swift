@@ -8,18 +8,8 @@
 
 import Foundation
 
-enum Days {
-    case Monday
-    case Tuesday
-    case Wednesday
-    case Thursday
-    case Friday
-    case Saturday
-    case Sanday
-}
-
 class DayModel {
-    var title: Days!
+    var title: Days
     var subtitle: String = ""
     var timeDescribing: String = ""
     var time = Date()

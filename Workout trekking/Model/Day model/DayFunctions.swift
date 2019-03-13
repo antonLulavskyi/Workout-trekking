@@ -18,9 +18,9 @@ class DayFunctions {
         // .userInteractive - the highest priority on a background thread
         DispatchQueue.global(qos: .userInteractive).async {
             if Data.dayModels.count == 0 {
-                Data.dayModels.append(DayModel(title: .Monday))
-                Data.dayModels.append(DayModel(title: .Tuesday))
-                Data.dayModels.append(DayModel(title: .Wednesday))
+                Data.dayModels.append(DayModel(title: Days.Monday))
+                Data.dayModels.append(DayModel(title: Days.Tuesday))
+                Data.dayModels.append(DayModel(title: Days.Wednesday))
             }
             DispatchQueue.main.async {
                 // Updating UI-stuff
@@ -35,7 +35,7 @@ class DayFunctions {
         
     }
     // We will have only one day of Days, so esier be pick current day from Days and delete it
-    static func deleteDay(days: Days) {
+    static func deleteDay(days: DayModel) {
         
     }
 }
