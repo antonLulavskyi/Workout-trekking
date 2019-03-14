@@ -15,6 +15,12 @@
 		52D88E7E22392BCA00DF57C3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D88E7D22392BCA00DF57C3 /* Data.swift */; };
 		52D88E81223935C100DF57C3 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D88E80223935C100DF57C3 /* DaysViewController.swift */; };
 		52D88E83223935D800DF57C3 /* DaysViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D88E82223935D800DF57C3 /* DaysViewController.storyboard */; };
+		52D88E86223953BE00DF57C3 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D88E85223953BE00DF57C3 /* DaysTableViewCell.swift */; };
+		52D88E892239622800DF57C3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D88E882239622800DF57C3 /* UIViewExtension.swift */; };
+		52D88E8C2239640000DF57C3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D88E8B2239640000DF57C3 /* Theme.swift */; };
+		52D88E8E2239647C00DF57C3 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52D88E8D2239647C00DF57C3 /* IndieFlower.ttf */; };
+		52D88E902239667A00DF57C3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D88E8F2239667A00DF57C3 /* Colors.xcassets */; };
+		52D88E92223A3BBB00DF57C3 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D88E91223A3BBB00DF57C3 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		52D88E7D22392BCA00DF57C3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		52D88E80223935C100DF57C3 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
 		52D88E82223935D800DF57C3 /* DaysViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DaysViewController.storyboard; sourceTree = "<group>"; };
+		52D88E85223953BE00DF57C3 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
+		52D88E882239622800DF57C3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		52D88E8B2239640000DF57C3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		52D88E8D2239647C00DF57C3 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
+		52D88E8F2239667A00DF57C3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		52D88E91223A3BBB00DF57C3 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +72,11 @@
 		52D88E64223803D700DF57C3 /* Workout trekking */ = {
 			isa = PBXGroup;
 			children = (
+				52D88E8A223963DE00DF57C3 /* Resources */,
+				52D88E872239620400DF57C3 /* Extensions */,
 				52D88E7722390A2A00DF57C3 /* Model */,
 				52D88E7F2239358F00DF57C3 /* View */,
 				52D88E65223803D700DF57C3 /* AppDelegate.swift */,
-				52D88E6C223803D900DF57C3 /* Assets.xcassets */,
 				52D88E6E223803D900DF57C3 /* LaunchScreen.storyboard */,
 				52D88E71223803D900DF57C3 /* Info.plist */,
 			);
@@ -99,10 +112,31 @@
 		52D88E842239361F00DF57C3 /* Days */ = {
 			isa = PBXGroup;
 			children = (
-				52D88E80223935C100DF57C3 /* DaysViewController.swift */,
 				52D88E82223935D800DF57C3 /* DaysViewController.storyboard */,
+				52D88E80223935C100DF57C3 /* DaysViewController.swift */,
+				52D88E85223953BE00DF57C3 /* DaysTableViewCell.swift */,
 			);
 			path = Days;
+			sourceTree = "<group>";
+		};
+		52D88E872239620400DF57C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52D88E882239622800DF57C3 /* UIViewExtension.swift */,
+				52D88E91223A3BBB00DF57C3 /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52D88E8A223963DE00DF57C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52D88E8B2239640000DF57C3 /* Theme.swift */,
+				52D88E8D2239647C00DF57C3 /* IndieFlower.ttf */,
+				52D88E8F2239667A00DF57C3 /* Colors.xcassets */,
+				52D88E6C223803D900DF57C3 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D88E902239667A00DF57C3 /* Colors.xcassets in Resources */,
 				52D88E83223935D800DF57C3 /* DaysViewController.storyboard in Resources */,
 				52D88E70223803D900DF57C3 /* LaunchScreen.storyboard in Resources */,
 				52D88E6D223803D900DF57C3 /* Assets.xcassets in Resources */,
+				52D88E8E2239647C00DF57C3 /* IndieFlower.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +213,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D88E7C22390A8300DF57C3 /* DayFunctions.swift in Sources */,
+				52D88E8C2239640000DF57C3 /* Theme.swift in Sources */,
 				52D88E7E22392BCA00DF57C3 /* Data.swift in Sources */,
 				52D88E7A22390A7600DF57C3 /* DayModel.swift in Sources */,
 				52D88E81223935C100DF57C3 /* DaysViewController.swift in Sources */,
+				52D88E92223A3BBB00DF57C3 /* UIButtonExtension.swift in Sources */,
+				52D88E892239622800DF57C3 /* UIViewExtension.swift in Sources */,
+				52D88E86223953BE00DF57C3 /* DaysTableViewCell.swift in Sources */,
 				52D88E66223803D700DF57C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
